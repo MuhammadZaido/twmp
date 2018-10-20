@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-4 "http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#studies -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-4;studies">
+        <rdfs:range rdf:resource="&untitled-ontology-4;Model"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-4;student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#teaches -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-4;teaches">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Lecture"/>
+        <rdfs:range rdf:resource="&untitled-ontology-4;Model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#first_name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;first_name">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#last_name -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;last_name">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#studentID -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;studentID">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;student"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#stuffID -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;stuffID">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Lecture"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#CsModule -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;CsModule">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-4;Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Lecture -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Lecture">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-4;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#MathModel -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;MathModel">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-4;Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Model -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#student -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;student">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-4;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Cs101 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Cs101">
+        <rdf:type rdf:resource="&untitled-ontology-4;CsModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Cs103 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Cs103">
+        <rdf:type rdf:resource="&untitled-ontology-4;CsModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Lectuer2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Lectuer2">
+        <rdf:type rdf:resource="&untitled-ontology-4;Lecture"/>
+        <stuffID rdf:datatype="&xsd;integer">102</stuffID>
+        <last_name rdf:datatype="&xsd;string">Alhiba</last_name>
+        <first_name rdf:datatype="&xsd;string">Kinan</first_name>
+        <teaches rdf:resource="&untitled-ontology-4;Cs103"/>
+        <teaches rdf:resource="&untitled-ontology-4;M204"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Lecture1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Lecture1">
+        <rdf:type rdf:resource="&untitled-ontology-4;Lecture"/>
+        <stuffID rdf:datatype="&xsd;integer">101</stuffID>
+        <first_name rdf:datatype="&xsd;string">Muhammad</first_name>
+        <last_name rdf:datatype="&xsd;string">Zaido</last_name>
+        <teaches rdf:resource="&untitled-ontology-4;Cs103"/>
+        <teaches rdf:resource="&untitled-ontology-4;M201"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#M201 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;M201">
+        <rdf:type rdf:resource="&untitled-ontology-4;MathModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#M204 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;M204">
+        <rdf:type rdf:resource="&untitled-ontology-4;MathModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Student1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Student1">
+        <rdf:type rdf:resource="&untitled-ontology-4;student"/>
+        <studentID rdf:datatype="&xsd;integer">201</studentID>
+        <first_name rdf:datatype="&xsd;string">Ali</first_name>
+        <last_name rdf:datatype="&xsd;string">Mohammad</last_name>
+        <studies rdf:resource="&untitled-ontology-4;Cs101"/>
+        <studies rdf:resource="&untitled-ontology-4;Cs103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/muhammad/ontologies/2018/9/untitled-ontology-4#Student2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Student2">
+        <rdf:type rdf:resource="&untitled-ontology-4;student"/>
+        <studentID rdf:datatype="&xsd;integer">202</studentID>
+        <first_name rdf:datatype="&xsd;string">Younes</first_name>
+        <last_name rdf:datatype="&xsd;string">Zaido</last_name>
+        <studies rdf:resource="&untitled-ontology-4;M201"/>
+        <studies rdf:resource="&untitled-ontology-4;M204"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-4;CsModule"/>
+            <rdf:Description rdf:about="&untitled-ontology-4;Lecture"/>
+            <rdf:Description rdf:about="&untitled-ontology-4;MathModel"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
